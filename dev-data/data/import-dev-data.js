@@ -52,7 +52,7 @@ const deleteData = async () => {
   }
   process.exit();
 };
-if (process.env.ImportData === "--import") {
+if (process.argv[2] === "--import") {
   importData();
   console.log("work this way");
 } else if (process.argv[2] === "--delete") {
